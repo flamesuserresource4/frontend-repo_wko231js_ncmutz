@@ -1,36 +1,46 @@
 import React from 'react';
-import { Coins, Zap, Server, Shield, Cloud, Settings } from 'lucide-react';
+import { Coins, Zap, Server, Shield, Cloud, Settings, Youtube, LineChart } from 'lucide-react';
 
 const features = [
   {
     icon: <Coins className="h-5 w-5" />,
     title: 'Multiple income streams',
-    desc: 'Generate revenue via affiliate marketplaces, digital downloads, lead-gen funnels, and recurring memberships.'
+    desc: 'Affiliate sales, digital downloads, memberships, and data subscriptions compounding over time.'
+  },
+  {
+    icon: <LineChart className="h-5 w-5" />,
+    title: 'Lightning trading engine',
+    desc: 'Low-latency execution, risk controls, and AI-assisted signals for paper/live trading.'
+  },
+  {
+    icon: <Youtube className="h-5 w-5" />,
+    title: 'YouTube + AI automation',
+    desc: 'Auto-generate scripts, voiceovers, edits, and publish with SEO metadata and scheduling.'
   },
   {
     icon: <Zap className="h-5 w-5" />,
     title: 'Autonomous operations',
-    desc: 'Automates product research, content generation, pricing, listing, and promotion—no manual oversight required.'
+    desc: 'Research, create, price, list, promote, and iterate—continuously, with minimal oversight.'
   },
   {
     icon: <Server className="h-5 w-5" />,
     title: 'AWS-native architecture',
-    desc: 'Orchestrated with Step Functions, Lambda, API Gateway, DynamoDB, S3, and EventBridge for scale and reliability.'
+    desc: 'API Gateway, Lambda, DynamoDB, S3, Step Functions, and EventBridge for scale and reliability.'
   },
   {
     icon: <Shield className="h-5 w-5" />,
-    title: 'Security-first',
-    desc: 'IAM least-privilege, KMS encryption, private networking, and audit trails to protect your assets and data.'
+    title: 'Defense-in-depth security',
+    desc: 'Zero-trust IAM, KMS encryption, VPC isolation, WAF, and continuous audit trails.'
   },
   {
     icon: <Cloud className="h-5 w-5" />,
-    title: 'Low cost, high margin',
-    desc: 'Serverless compute with usage-based costs keeps overhead minimal while maximizing profit potential.'
+    title: 'Lean cost model',
+    desc: 'Serverless, usage-based spend with autoscaling to keep margins high.'
   },
   {
     icon: <Settings className="h-5 w-5" />,
-    title: 'Pluggable affiliates',
-    desc: 'Integrate with platforms like Amazon Associates, ShareASale, and niche partner APIs using modular connectors.'
+    title: 'Pluggable connectors',
+    desc: 'Integrate marketplaces and socials via modular adapters and API keys.'
   }
 ];
 
@@ -41,7 +51,7 @@ const FeatureGrid = () => {
         <div className="mx-auto mb-10 max-w-2xl text-center">
           <h2 className="text-3xl font-semibold sm:text-4xl">Designed for compounding cashflow</h2>
           <p className="mt-3 text-white/70">
-            A modern fintech-grade system that creates, lists, and sells digital products while reinvesting results into new opportunities.
+            A modern fintech-grade system that creates, lists, promotes, and monetizes assets while learning from every cycle.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
